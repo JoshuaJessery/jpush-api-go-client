@@ -10,14 +10,14 @@ type Notice struct {
 type AndroidNotice struct {
 	Alert     string                 `json:"alert"`
 	Title     string                 `json:"title,omitempty"`
-	BuilderId int                    `json:"builder_id,omitempty"`
+	BuilderId string                 `json:"builder_id,omitempty"`
 	Extras    map[string]interface{} `json:"extras,omitempty"`
 }
 
 type IOSNotice struct {
 	Alert            string                 `json:"alert"`
 	Sound            string                 `json:"sound,omitempty"`
-	Badge            int                    `json:"badge,omitempty"`
+	Badge            string                 `json:"badge,omitempty"`
 	ContentAvailable bool                   `json:"Content-available,omitempty"`
 	Category         string                 `json:"category,omitempty"`
 	Extras           map[string]interface{} `json:"extras,omitempty"`
